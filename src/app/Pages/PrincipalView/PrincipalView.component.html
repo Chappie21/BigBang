@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row d-flex">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <app-Sidebar></app-Sidebar>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-9">
+          <app-navbar username="Rafael Erazo" usertype="Admin" [navtype]="2"></app-navbar>
+          <div>
+              <router-outlet></router-outlet>
+          </div>
+        </div>
+    </div>
+</div>

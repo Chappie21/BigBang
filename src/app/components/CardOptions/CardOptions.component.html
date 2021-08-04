@@ -1,0 +1,18 @@
+<a [class] = "cardColor" style="width: 14rem; height: 20rem;" role="button" 
+  (mouseenter) = "paint()"
+  (mouseleave) = "dpaint()"
+  [routerLink] = "urlLink"
+>
+    <div [class] = "headerColor">
+        <br/>
+    </div>
+    <span [class] = "arrow"></span>
+    <div class="card-body p-3 d-flex justify-content-center align-items-center">
+        <div class="container">
+          <img [class] = "imgColor" [src]="urlOpcion" width="100%">
+          <div [class]="buttonColor" style="color: #c0c5cc;">
+            <b>{{nameOption}}</b>
+          </div>
+        </div>
+    </div>
+</a>

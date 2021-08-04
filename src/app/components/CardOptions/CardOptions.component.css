@@ -1,0 +1,16 @@
+.blue{
+    filter: hue-rotate(245deg) saturate(3) invert(50);
+}
+
+a{
+    text-decoration: none;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0;
+    margin: auto;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #6c3e85;
+}
