@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DisplaySidebarService } from 'src/app/services/displaySidebar/displaySidebar.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +13,7 @@ export class NavbarComponent implements OnInit {
 
   public colorNavbar:string = "navbar navbar-expand-lg navbar-light bg-light p-0";
 
-  constructor() { }
+  constructor(public displaySidebar:DisplaySidebarService) { }
 
   ngOnInit() {
 
@@ -24,6 +25,10 @@ export class NavbarComponent implements OnInit {
           this.colorNavbar = "navbar navbar-expand-lg navbar-light p-0"
       }
 
+  }
+
+  public Deslizar(){
+      this.displaySidebar.displayforTouch = true;
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { OptionSelectService } from 'src/app/services/OptionSelect.service';
 
 @Component({
   selector: 'app-CardOptions',
@@ -19,6 +20,13 @@ export class CardOptionsComponent implements OnInit {
   arrow:string = "";
   imgColor:string = "";
 
+  constructor(private options:OptionSelectService) { }
+
+  // Al renderizar las propiedades del componente se crea la neuva opcion en el servicio
+  ngOnInit() {
+      this.options.createOption(this.nameOption);
+  }
+
   public paint(){
       this.headerColor = "card-header bg-primary"
       this.cardColor = "card rounded-0 border-primary";
@@ -35,9 +43,8 @@ export class CardOptionsComponent implements OnInit {
       this.arrow = "";
   }
 
-  constructor() { }
-
-  ngOnInit() {
+  public selectOption(){
+      this.options.setSelect(this.nameOption);
   }
 
 }

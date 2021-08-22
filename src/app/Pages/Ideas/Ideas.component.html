@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid p-0">
     <div class="container text-muted">
           <h1 class="display-3 font-weight-bold"><b>Ideas</b></h1>
           <b class="h5">
@@ -10,7 +10,14 @@
             </button>
           </div>
     </div>
-    <div class="container-fluid d-flex mt-3">
-        <app-AddButton title="Agregar una nueva idea"></app-AddButton>
+    <div class="container-fluid mt-3">
+        <div class="row row-cols-auto">
+          <app-AddButton title="Agregar una nueva idea" class="col mt-2"></app-AddButton>
+          <app-PreviewIdea class="col mt-2"></app-PreviewIdea>
+          <app-PreviewIdea class="col mt-2"></app-PreviewIdea>
+          <app-PreviewIdea class="col mt-2"></app-PreviewIdea>
+          <app-PreviewIdea class="col mt-2"></app-PreviewIdea>
+          <app-PreviewIdea class="col mt-2"></app-PreviewIdea>
+        </div>
     </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { OptionSelectService } from 'src/app/services/OptionSelect.service';
 
 @Component({
   selector: 'app-Ideas',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IdeasComponent implements OnInit {
 
-  constructor() { }
+  constructor(option:OptionSelectService) { 
+     
+    
+  }
 
   ngOnInit() {
+
   }
 
 }

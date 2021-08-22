@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Reto } from 'src/models/Reto';
+import { DisplaySidebarService } from 'src/app/services/displaySidebar/displaySidebar.service';
 
 @Component({
   selector: 'app-InitialView',
@@ -83,7 +84,7 @@ export class InitialViewComponent implements OnInit {
     }
 ]
 
-  constructor() { }
+  constructor(public displaySidebar:DisplaySidebarService) { }
 
   ngOnInit() {
   }
